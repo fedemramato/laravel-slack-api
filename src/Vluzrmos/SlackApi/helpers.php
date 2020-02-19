@@ -1,11 +1,14 @@
 <?php
 
+use Vluzrmos\SlackApi\Contracts;
+use Vluzrmos\SlackApi\Methods\SlackMethod;
+
 if (! function_exists('slack')) {
 
     /**
      * Helper to easy load an slack method or the api.
      * @param  string $method slack method name
-     * @return \Vluzrmos\SlackApi\Contracts|SlackApi|\Vluzrmos\SlackApi\Methods\SlackMethod
+     * @return Contracts|SlackApi|SlackMethod
      */
     function slack($method = null)
     {
